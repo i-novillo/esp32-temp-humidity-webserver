@@ -1,0 +1,21 @@
+menu "Sensor and Web Server config"
+
+    config APP_WIFI_SSID
+        string "Wi-Fi SSID"
+        default "MyWifi"
+
+    config APP_WIFI_PASSWORD
+        string "Wi-Fi Password"
+        default "MyPassword"
+
+    config APP_DHT11_PIN
+        int "DHT11 GPIO Pin"
+        range 0 39
+        default 14
+
+    config APP_SENSOR_READ_PERIOD_MS
+        int "Sensor Read Period (ms)"
+        range 100 60000
+        default 2000
+
+endmenu

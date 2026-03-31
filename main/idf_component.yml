@@ -1,0 +1,4 @@
+dependencies:
+  # Define a dependency from a Git repository
+  dht11:
+    git: https://github.com/abdellah2288/esp32-dht11.git
